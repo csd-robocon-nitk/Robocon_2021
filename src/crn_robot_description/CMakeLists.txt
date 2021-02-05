@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 
-project(pass Robot base chassis only)
+project(crn_robot_description)
 
 find_package(catkin REQUIRED)
 

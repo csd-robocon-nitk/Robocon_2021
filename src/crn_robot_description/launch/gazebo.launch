@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find pass Robot base chassis only)/urdf/pass Robot base chassis only.urdf -urdf -model pass Robot base chassis only"
+    args="-file $(find crn_robot_description)/urdf/crn_robot_description.urdf -urdf -model crn_robot_description"
     output="screen" />
   <node
     name="fake_joint_calibration"
