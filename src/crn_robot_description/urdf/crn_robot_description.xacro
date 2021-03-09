@@ -89,7 +89,7 @@
   </link>
   <joint
     name="wheel_1"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0.30256 0.30135 0.023995"
       rpy="-1.5708 0.18221 -0.7854" />
@@ -147,7 +147,7 @@
   </link>
   <joint
     name="wheel_2"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="0.29811 -0.30581 0.024724"
       rpy="-1.5708 0.49705 0.7854" />
@@ -205,7 +205,7 @@
   </link>
   <joint
     name="wheel_3"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="-0.29568 -0.30824 0.062368"
       rpy="1.5708 0.23035 -0.7854" />
@@ -263,7 +263,7 @@
   </link>
   <joint
     name="wheel_4"
-    type="fixed">
+    type="revolute">
     <origin
       xyz="-0.31368 0.29024 0.05579"
       rpy="1.5708 -1.1849 0.7854" />
