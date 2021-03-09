@@ -1,0 +1,21 @@
+<launch>
+  <param command="$(find xacro)/xacro $(find crn_robot_description)/urdf/crn_robot_description.xacro" name="robot_description"/>
+  <node args="-param robot_description -urdf -model crn_robot_description" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="true"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  <rosparam file="$(find crn_robot_description)/config/joint_names.yaml" command="load"/>
+  
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <!-- Combine joint values -->
+  
+    <!-- Show in Rviz   -->
+    <!-- <node name="rviz" pkg="rviz" type="rviz" /> -->
+  <!--node type="rviz" name="rviz" pkg="rviz" args="-d $(find pkg_techfest_imc)/rviz/rviz_config.rviz" /-->
+
+</launch>

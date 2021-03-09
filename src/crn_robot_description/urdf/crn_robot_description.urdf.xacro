@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<robot name="crn_robot_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
+ 
+<xacro:macro name="Transmission_block">
+  <transmission name="trans_1">
+    <type>transmission_interface/SimpleTransmission</type>
+        <joint name="wheel_1">
+            <hardwareInterface>VelocityJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="motor1">
+            <hardwareInterface>VelocityJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+  </transmission>
+
+  <transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_2">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+    <transmission name="tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_3">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel_4">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+ </xacro:macro>
+  
+<gazebo>
+  <controller:mecanum_drive_plugin name="mecanum_drive_controller" plugin="libmecanum_plugin.so">
+    <alwaysOn>true</alwaysOn>
+    <update>100</update>
+    <updateRate>100.0</updateRate>
+    <frontLeftJoint>wheel_1</frontLeftJoint>
+    <frontRightJoint>wheel_2</frontRightJoint>
+    <backLeftJoint>wheel_3</backLeftJoint>
+    <backRightJoint>wheel_4</backRightJoint>
+    <robotWidth>0.27</robotWidth>   <!--total robot width: 0.54 m-->
+    <robotLength>0.25</robotLength> <!--total robot length: 0.50 m-->
+    <wheelDiameter>0.26</wheelDiameter>
+    <torque>5</torque>
+    <interface:position name="position_iface_0"/>
+    <topicName>cmd_vel</topicName>
+  </controller:mecanum_drive_plugin>
+</gazebo>
+
+</robot>
