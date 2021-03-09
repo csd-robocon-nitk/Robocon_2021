@@ -1,7 +1,9 @@
 <launch>
+
   <include
     file="$(find gazebo_ros)/launch/empty_world.launch" />
-  <node
+         <arg name="world_name" value="$(find crn_robot_description)/worlds/arena.world"/>
+  <!-- <node
     name="tf_footprint_base"
     pkg="tf"
     type="static_transform_publisher"
@@ -16,5 +18,7 @@
     name="fake_joint_calibration"
     pkg="rostopic"
     type="rostopic"
-    args="pub /calibrated std_msgs/Bool true" />
+    args="pub /calibrated std_msgs/Bool true" /> -->
+
+
 </launch>

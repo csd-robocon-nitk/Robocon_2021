@@ -1,0 +1,28 @@
+<?xml version ="1.0"?>
+<sdf version="1.6">
+  <model name="arena">
+    <pose>0 0 0  0 0 0</pose>
+    <static>true</static>
+    <link name="link">
+      <collision name="colision1">
+        <geometry>
+          <mesh>
+            <uri>model://arena/meshes/fullarenabase3.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name="visual1">
+        <cast_shadows>true</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://arena/meshes/fullarenabase3.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+    </link>
+  </model>
+</sdf>
