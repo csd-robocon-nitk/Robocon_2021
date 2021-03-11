@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com)
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="crn_robot_description" xmlns:xacro="http://www.ros.org/wiki/xacro">     
+  name="crn_robot_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
 <xacro:include filename="$(find crn_robot_description)/urdf/crn_robot_description.gazebo" />
-<!--xacro:include filename="$(find crn_robot_description)/urdf/crn_robot_description.trans" /-->
+<xacro:include filename="$(find crn_robot_description)/urdf/crn_robot_description.trans" />
 
   <link
     name="base_link">
@@ -88,8 +88,8 @@
     </collision>
   </link>
   <joint
-    name="wheel_1"
-    type="revolute">
+    name="wheel_1_"
+    type="continuous">
     <origin
       xyz="0.30256 0.30135 0.023995"
       rpy="-1.5708 0.18221 -0.7854" />
@@ -98,12 +98,10 @@
     <child
       link="wheel_1" />
     <axis
-      xyz="1 0 -1" />
+      xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="1"
-      effort="0"
-      velocity="3" />
+      effort="100"
+      velocity="50" />
   </joint>
   <link
     name="wheel_2">
@@ -146,8 +144,8 @@
     </collision>
   </link>
   <joint
-    name="wheel_2"
-    type="revolute">
+    name="wheel_2_"
+    type="continuous">
     <origin
       xyz="0.29811 -0.30581 0.024724"
       rpy="-1.5708 0.49705 0.7854" />
@@ -156,12 +154,10 @@
     <child
       link="wheel_2" />
     <axis
-      xyz="1 0 1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="1"
-      effort="0"
-      velocity="3" />
+      effort="100"
+      velocity="50" />
   </joint>
   <link
     name="wheel_3">
@@ -204,8 +200,8 @@
     </collision>
   </link>
   <joint
-    name="wheel_3"
-    type="revolute">
+    name="wheel_3_"
+    type="continuous">
     <origin
       xyz="-0.29568 -0.30824 0.062368"
       rpy="1.5708 0.23035 -0.7854" />
@@ -214,12 +210,10 @@
     <child
       link="wheel_3" />
     <axis
-      xyz="-1 0 1" />
+      xyz="0 0 1" />
     <limit
-      lower="0"
-      upper="1"
-      effort="0"
-      velocity="3" />
+      effort="100"
+      velocity="50" />
   </joint>
   <link
     name="wheel_4">
@@ -262,8 +256,8 @@
     </collision>
   </link>
   <joint
-    name="wheel_4"
-    type="revolute">
+    name="wheel_4_"
+    type="continuous">
     <origin
       xyz="-0.31368 0.29024 0.05579"
       rpy="1.5708 -1.1849 0.7854" />
@@ -272,12 +266,10 @@
     <child
       link="wheel_4" />
     <axis
-      xyz="-1 0 -1" />
+      xyz="0 0 -1" />
     <limit
-      lower="0"
-      upper="1"
-      effort="0"
-      velocity="3" />
+      effort="100"
+      velocity="50" />
   </joint>
 
 </robot>

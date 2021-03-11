@@ -1,25 +1,30 @@
 <?xml version="1.0"?>
 <robot name="crn_robot_description" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<!--gazebo>
-  <plugin name="ros_control" filename="libgazebo_ros_control.so">
+<gazebo>
+  <!--plugin name="ros_control" filename="libgazebo_ros_control.so">
     <legacyModeNS>false</legacyModeNS>
     <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
-  </plugin>
+  </plugin-->
 
-    <plugin name="controller" filename="libgazebo_ros_planar_move.so">
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/crn_robot_description</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+
+    <!--plugin name="controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <odometryRate>50.0</odometryRate>
       <robotBaseFrame>base_link</robotBaseFrame>
-    </plugin>
-  </gazebo-->
+    </plugin-->
+  </gazebo>
 
-  <gazebo>
+  <!--gazebo>
     <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
       <updateRate>40.0</updateRate>
-      <leftFrontJoint>wheel_1</leftFrontJoint>  
+      <leftFrontJoint>wheel_1</leftFrontJoint>
       <rightFrontJoint>wheel_2</rightFrontJoint>
       <leftRearJoint>wheel_3</leftRearJoint>
       <rightRearJoint>wheel_4</rightRearJoint>
@@ -28,14 +33,14 @@
       <robotBaseFrame>base_link</robotBaseFrame>
       <torque>60</torque>
       <topicName>cmd_vel</topicName>
-      
+
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      
+
       <broadcastTF>true</broadcastTF>
    </plugin>
-  </gazebo>
+ </gazebo-->
 
 <!--gazebo>
   <plugin name="mecanum_drive_controller" plugin="libmecanum_plugin.so">
@@ -46,8 +51,8 @@
     <frontRightJoint>wheel_2</frontRightJoint>
     <backLeftJoint>wheel_3</backLeftJoint>
     <backRightJoint>wheel_4</backRightJoint>
-    <robotWidth>0.27</robotWidth> 
-    <robotLength>0.25</robotLength> 
+    <robotWidth>0.27</robotWidth>
+    <robotLength>0.25</robotLength>
     <wheelDiameter>0.26</wheelDiameter>
     <torque>5</torque>
     <interface:position name="position_iface_0"/>

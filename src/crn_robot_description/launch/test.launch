@@ -2,20 +2,31 @@
   <param command="$(find xacro)/xacro $(find crn_robot_description)/urdf/crn_robot_description.xacro" name="robot_description"/>
   <node args="-param robot_description -urdf -model crn_robot_description" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="paused" value="true"/>
+    <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
     <arg name="headless" value="false"/>
     <arg name="debug" value="false"/>
   </include>
   <rosparam file="$(find crn_robot_description)/config/joint_names.yaml" command="load"/>
-  
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+  output="screen" ns="/crn_robot_description" args="joint_state_controller
+            wheel_front_left_controller
+            wheel_front_right_controller
+            wheel_rear_left_controller
+            wheel_rear_right_controller"/>
+  <node
+      name="joint_state_publisher_gui"
+      pkg="joint_state_publisher_gui"
+      type="joint_state_publisher_gui" />
+  <!--node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/-->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"  respawn="false" output="screen">
+    <remap from="/joint_states" to="/crn_robot_description/joint_states" />
+  </node>
   <!-- Combine joint values -->
-  
+
     <!-- Show in Rviz   -->
-    <!-- <node name="rviz" pkg="rviz" type="rviz" /> -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find crn_robot_description)/config/crn_rviz.rviz"/>
   <!--node type="rviz" name="rviz" pkg="rviz" args="-d $(find pkg_techfest_imc)/rviz/rviz_config.rviz" /-->
 
 </launch>
