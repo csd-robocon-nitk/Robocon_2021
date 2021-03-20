@@ -225,17 +225,17 @@
     name="back_right">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="2.7756E-17 9.7145E-17 -1.00097337"
         rpy="0 0 0" />
       <mass
-        value="0" />
+        value="0.8" />
       <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        ixx="0.0013851"
+        ixy="9.6743E-19"
+        ixz="-1.0842E-19"
+        iyy="0.0012851"
+        iyz="-3.8401E-19"
+        izz="0.0025006" />
     </inertial>
     <visual>
       <origin
