@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<robot name="defense_bot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="std_friction" value="0.2" />
+
+<gazebo reference="base_link">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="gripper_ball_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="turn_table_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="rack_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="screw_turn_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="right_finger_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="gripper_arm_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="gripper_1">
+  <mu1>${std_friction}</mu1>
+  <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+</robot>

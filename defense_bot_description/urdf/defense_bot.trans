@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<robot name="defense_bot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="gripper_ball_rotation_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_ball_rotation">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_ball_rotation_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="turn_table_rotation_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="turn_table_rotation">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="turn_table_rotation_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="rack_slider_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="rack_slider">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="rack_slider_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="lead_screw_slider_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="lead_screw_slider">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="lead_screw_slider_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="end_effector_rotation_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="end_effector_rotation">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="end_effector_rotation_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="gripper_arm_rotation_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_arm_rotation">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_arm_rotation_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="gripper_rotation_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_rotation">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_rotation_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>

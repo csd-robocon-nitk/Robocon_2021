@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<robot name="defense_bot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+<gazebo reference="base_link">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="gripper_ball_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="turn_table_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="rack_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="screw_turn_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="right_finger_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="gripper_arm_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="gripper_1">
+  <material>${body_color}</material>
+</gazebo>
+
+</robot>
