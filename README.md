@@ -1,8 +1,8 @@
 # CSD Robocon_2021
 
-- CSD Robocon Official website: https://robocon.nitk.ac.in/
+- CSD Robocon NITK Official website: https://robocon.nitk.ac.in/
 
-- Robocon Official website : http://www.robocon2021.com/#page1
+- ABU Robocon 2021 Official website : http://www.robocon2021.com/#page1
 
 ### Directory Structure
 
