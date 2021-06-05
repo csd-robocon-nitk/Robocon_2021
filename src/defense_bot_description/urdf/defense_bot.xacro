@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<robot name="defense_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find defense_bot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find defense_bot_description)/urdf/defense_bot.trans" />
+<xacro:include filename="$(find defense_bot_description)/gazebo/defense_bot_materials.gazebo" />
+<xacro:include filename="$(find defense_bot_description)/gazebo/defense_bot_physics.gazebo" />
+<xacro:include filename="$(find defense_bot_description)/gazebo/defense_bot_plugins.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.12099232848976177 0.12384344744617357 0.09244265027127854"/>
+    <mass value="116.038743583541"/>
+    <inertia ixx="5.021883" ixy="-0.105373" ixz="-0.817134" iyy="7.490255" iyz="-0.038364" izz="11.54731"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_ball_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-6.11849846898771e-08 -3.6474196332680897e-07 0.044306464815765056"/>
+    <mass value="0.47356245578988415"/>
+    <inertia ixx="0.000485" ixy="-0.0" ixz="0.0" iyy="0.000485" iyz="-0.0" izz="0.000508"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.349673 -0.131302 -0.667744"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/gripper_ball_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.349673 -0.131302 -0.667744"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/gripper_ball_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="turn_table_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.00625093492919542 0.23970404427172037 0.32294960634579334"/>
+    <mass value="14.511620008028595"/>
+    <inertia ixx="0.717239" ixy="0.019632" ixz="0.006421" iyy="0.171852" iyz="-0.171252" izz="0.598756"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.0 0.175 -0.041387"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/turn_table_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.0 0.175 -0.041387"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/turn_table_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rack_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.009405 -0.117358 -0.381387"/>
+    <mass value="0.0"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009405 -0.117358 -0.381387"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/rack_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009405 -0.117358 -0.381387"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/rack_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="screw_turn_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0032110045585751618 0.037437890732595736 -0.10784422197705906"/>
+    <mass value="0.5399709461576145"/>
+    <inertia ixx="0.000829" ixy="7.1e-05" ixz="6.6e-05" iyy="0.000428" iyz="-0.000218" izz="0.000511"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.046317 -0.472245 -0.507287"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/screw_turn_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.046317 -0.472245 -0.507287"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/screw_turn_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_finger_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.008043035510031916 0.03252716283839108 0.02999999999999725"/>
+    <mass value="0.1895264462202996"/>
+    <inertia ixx="0.00012" ixy="-1e-05" ixz="0.0" iyy="6.6e-05" iyz="-0.0" izz="7.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.048894 -0.507834 -0.397687"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/right_finger_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.048894 -0.507834 -0.397687"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/right_finger_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_arm_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-6.094661719746597e-08 -3.6450353810280056e-07 0.20248200413705514"/>
+    <mass value="38.912224485646085"/>
+    <inertia ixx="0.684471" ixy="-0.0" ixz="0.0" iyy="0.667687" iyz="0.0" izz="0.084993"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.349673 -0.131302 -0.163055"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/gripper_arm_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.349673 -0.131302 -0.163055"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/gripper_arm_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="gripper_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-5.650582040972463e-05 -5.742274682640769e-06 0.012570134108018105"/>
+    <mass value="1.1544288999081391"/>
+    <inertia ixx="0.000982" ixy="0.0" ixz="3e-06" iyy="0.001008" iyz="-0.0" izz="0.000357"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.349673 -0.131302 -0.593541"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/gripper_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.349673 -0.131302 -0.593541"/>
+    <geometry>
+      <mesh filename="package://defense_bot_description/meshes/gripper_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="gripper_ball_rotation" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.074203"/>
+  <parent link="gripper_1"/>
+  <child link="gripper_ball_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="turn_table_rotation" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 -0.175 0.041387"/>
+  <parent link="base_link"/>
+  <child link="turn_table_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="rack_slider" type="prismatic">
+  <origin rpy="0 0 0" xyz="-0.009405 0.292358 0.34"/>
+  <parent link="turn_table_1"/>
+  <child link="rack_1"/>
+  <axis xyz="0.002035 0.999998 0.0"/>
+  <limit effort="100" lower="0.0" upper="0.0" velocity="100"/>
+</joint>
+
+<joint name="lead_screw_slider" type="prismatic">
+  <origin rpy="0 0 0" xyz="0.055722 0.354887 0.1259"/>
+  <parent link="rack_1"/>
+  <child link="screw_turn_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit effort="100" lower="0.0" upper="0.0" velocity="100"/>
+</joint>
+
+<joint name="end_effector_rotation" type="continuous">
+  <origin rpy="0 0 0" xyz="0.002577 0.035589 -0.1096"/>
+  <parent link="screw_turn_1"/>
+  <child link="right_finger_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="gripper_arm_rotation" type="continuous">
+  <origin rpy="0 0 0" xyz="0.349673 0.131302 0.163055"/>
+  <parent link="base_link"/>
+  <child link="gripper_arm_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="gripper_rotation" type="continuous">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.430486"/>
+  <parent link="gripper_arm_1"/>
+  <child link="gripper_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+</robot>

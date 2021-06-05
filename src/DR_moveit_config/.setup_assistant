@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: defense_bot_description
+    relative_path: urdf/defense_bot.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/defense_bot.srdf
+  CONFIG:
+    author_name: Chandan Kumar
+    author_email: chandankum2440@gmail.com
+    generated_timestamp: 1622897413
