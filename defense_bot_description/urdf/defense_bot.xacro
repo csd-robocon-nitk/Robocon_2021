@@ -6,6 +6,8 @@
 <xacro:include filename="$(find defense_bot_description)/gazebo/defense_bot_materials.gazebo" />
 <xacro:include filename="$(find defense_bot_description)/gazebo/defense_bot_physics.gazebo" />
 <xacro:include filename="$(find defense_bot_description)/gazebo/defense_bot_plugins.gazebo" />
+<link name="dummy">
+</link>
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="0.12099232848976177 0.12384344744617357 0.09244265027127854"/>
@@ -72,8 +74,8 @@
 <link name="rack_1">
   <inertial>
     <origin rpy="0 0 0" xyz="0.009405 -0.117358 -0.381387"/>
-    <mass value="0.0"/>
-    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+    <mass value="0.0001"/>
+    <inertia ixx="0.0001" ixy="0.0001" ixz="0.0001" iyy="0.0001" iyz="0.0001" izz="0.0001"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0.009405 -0.117358 -0.381387"/>
@@ -123,7 +125,7 @@
       <mesh filename="package://defense_bot_description/meshes/right_finger_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
-  </visual>
+    </visual>
   <collision>
     <origin rpy="0 0 0" xyz="-0.048894 -0.507834 -0.397687"/>
     <geometry>
@@ -173,6 +175,11 @@
     </geometry>
   </collision>
 </link>
+
+<joint name="dummy_joint" type="fixed">
+  <parent link="dummy"/>
+  <child link="base_link"/>
+</joint>
 
 <joint name="gripper_ball_rotation" type="continuous">
   <origin rpy="0 0 0" xyz="0.0 0.0 0.074203"/>
