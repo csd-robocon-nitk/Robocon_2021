@@ -1,7 +1,7 @@
 <launch>
 
 <rosparam file="$(find defense_bot_description)/config/controller.yaml" command="load"/>
-<node args="gripper_ball_rotation_position_controller turn_table_rotation_position_controller rack_slider_position_controller lead_screw_slider_position_controller end_effector_rotation_position_controller gripper_arm_rotation_position_controller gripper_rotation_position_controller joint_state_controller " name="controller_spawner" ns="defense_bot" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+<node args="gripper_ball_rotation_position_controller rack_slider_position_controller lead_screw_slider_position_controller end_effector_rotation_position_controller gripper_rotation_position_controller gripper_arm_rotation_position_controller turn_table_rotation_position_controller joint_state_controller " name="controller_spawner" ns="defense_bot" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
 <node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
   <remap from="/joint_states" to="/defense_bot/joint_states"/>
 </node>

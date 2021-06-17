@@ -12,17 +12,6 @@
   </actuator>
 </transmission>
 
-<transmission name="turn_table_rotation_tran">
-  <type>transmission_interface/SimpleTransmission</type>
-  <joint name="turn_table_rotation">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-  </joint>
-  <actuator name="turn_table_rotation_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1</mechanicalReduction>
-  </actuator>
-</transmission>
-
 <transmission name="rack_slider_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="rack_slider">
@@ -56,6 +45,17 @@
   </actuator>
 </transmission>
 
+<transmission name="gripper_rotation_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="gripper_rotation">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="gripper_rotation_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
 <transmission name="gripper_arm_rotation_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="gripper_arm_rotation">
@@ -67,12 +67,12 @@
   </actuator>
 </transmission>
 
-<transmission name="gripper_rotation_tran">
+<transmission name="turn_table_rotation_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="gripper_rotation">
+  <joint name="turn_table_rotation">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="gripper_rotation_actr">
+  <actuator name="turn_table_rotation_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

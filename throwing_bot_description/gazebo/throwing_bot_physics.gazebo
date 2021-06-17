@@ -2,6 +2,7 @@
 <robot name="throwing_bot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <xacro:property name="std_friction" value="0.2" />
+<xacro:property name="wheel_friction" value="10.0" />
 
 <gazebo reference="base_link">
   <mu1>${std_friction}</mu1>
@@ -109,6 +110,30 @@
 <gazebo reference="arrow_grasper_3_2">
   <mu1>${std_friction}</mu1>
   <mu2>${std_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="wheel_fl_1">
+  <mu1>${wheel_friction}</mu1>
+  <mu2>${wheel_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="wheel_br_1">
+  <mu1>${wheel_friction}</mu1>
+  <mu2>${wheel_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="wheel_fr_1">
+  <mu1>${wheel_friction}</mu1>
+  <mu2>${wheel_friction}</mu2>
+  <selfCollide>true</selfCollide>
+</gazebo>
+
+<gazebo reference="wheel_bl_1">
+  <mu1>${wheel_friction}</mu1>
+  <mu2>${wheel_friction}</mu2>
   <selfCollide>true</selfCollide>
 </gazebo>
 

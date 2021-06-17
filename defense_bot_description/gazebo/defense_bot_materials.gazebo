@@ -11,10 +11,6 @@
   <material>${body_color}</material>
 </gazebo>
 
-<gazebo reference="turn_table_1">
-  <material>${body_color}</material>
-</gazebo>
-
 <gazebo reference="rack_1">
   <material>${body_color}</material>
 </gazebo>
@@ -27,11 +23,31 @@
   <material>${body_color}</material>
 </gazebo>
 
+<gazebo reference="gripper_1">
+  <material>${body_color}</material>
+</gazebo>
+
 <gazebo reference="gripper_arm_1">
   <material>${body_color}</material>
 </gazebo>
 
-<gazebo reference="gripper_1">
+<gazebo reference="turn_table_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="wheel_fr_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="wheel_fl_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="wheel_bl_1">
+  <material>${body_color}</material>
+</gazebo>
+
+<gazebo reference="wheel_br_1">
   <material>${body_color}</material>
 </gazebo>
 

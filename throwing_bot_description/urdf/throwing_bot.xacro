@@ -10,9 +10,9 @@
 </link>
 <link name="base_link">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.011851492296889534 -0.011348619168771903 0.25026581308769047"/>
-    <mass value="366.59500307051474"/>
-    <inertia ixx="42.733155" ixy="0.746789" ixz="0.016517" iyy="42.73439" iyz="0.005791" izz="68.525861"/>
+    <origin rpy="0 0 0" xyz="-0.011790426493338684 -0.01124321266871819 0.2651352232383578"/>
+    <mass value="336.84581532212275"/>
+    <inertia ixx="38.959044" ixy="0.746816" ixz="0.020281" iyy="38.959828" iyz="0.012324" izz="62.892112"/>
   </inertial>
   <visual>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -241,19 +241,19 @@
 
 <link name="arrow_holder_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.0031007846752700574 -0.04280260134703126 0.012073902838845851"/>
+    <origin rpy="0 0 0" xyz="-0.0031005616510704215 -0.04280339724640353 0.012073902839088546"/>
     <mass value="0.5992891515771885"/>
     <inertia ixx="0.00072" ixy="0.000361" ixz="1.3e-02" iyy="0.000719" iyz="1.2e-02" izz="0.000914"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.147275 -0.189701 -0.325039"/>
+    <origin rpy="0 0 0" xyz="-0.148689 -0.191116 -0.325039"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.147275 -0.189701 -0.325039"/>
+    <origin rpy="0 0 0" xyz="-0.148689 -0.191116 -0.325039"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_holder_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -262,7 +262,7 @@
 
 <link name="slider_rod_2">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.23568382593868098 -0.40627933785324843 0.030589993822034367"/>
+    <origin rpy="0 0 0" xyz="-0.23426960291456944 -0.40486513375260774 0.030589993822032258"/>
     <mass value="1.9072467651966203"/>
     <inertia ixx="0.007541" ixy="0.006722" ixz="1.4e-02" iyy="0.007536" iyz="3.3e-02" izz="0.013661"/>
   </inertial>
@@ -283,19 +283,19 @@
 
 <link name="throwing_base_1">
   <inertial>
-    <origin rpy="0 0 0" xyz="0.3573047240161689 0.3572198634283679 -0.000726381651222685"/>
+    <origin rpy="0 0 0" xyz="0.3573049470403686 0.3572200675290057 -0.0007263816510170717"/>
     <mass value="83.15108258777522"/>
     <inertia ixx="3.06197" ixy="-2.3335" ixz="-0.039769" iyy="3.062187" iyz="-0.039717" izz="6.037185"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="0.332917 0.332917 -0.304376"/>
+    <origin rpy="0 0 0" xyz="0.331503 0.331503 -0.304376"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/throwing_base_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="0.332917 0.332917 -0.304376"/>
+    <origin rpy="0 0 0" xyz="0.331503 0.331503 -0.304376"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/throwing_base_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -304,19 +304,19 @@
 
 <link name="arrow_grasper_1_2">
   <inertial>
-    <origin rpy="0 0 0" xyz="0.0019773748334052862 -0.002102348841381718 0.06444741353722411"/>
+    <origin rpy="0 0 0" xyz="0.0019775978576049708 -0.0021021447407637006 0.06444741353735595"/>
     <mass value="0.2227546747031532"/>
     <inertia ixx="0.000447" ixy="3e-02" ixz="-1.3e-02" iyy="0.000447" iyz="1.4e-02" izz="1e-02"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="0.022332 0.217672 -0.304788"/>
+    <origin rpy="0 0 0" xyz="0.020918 0.216258 -0.304788"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_1_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="0.022332 0.217672 -0.304788"/>
+    <origin rpy="0 0 0" xyz="0.020918 0.216258 -0.304788"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_1_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -325,19 +325,19 @@
 
 <link name="arrow_grasper_2_2">
   <inertial>
-    <origin rpy="0 0 0" xyz="0.0019775570824419053 -0.0021021653508950765 0.0644466168155644"/>
+    <origin rpy="0 0 0" xyz="0.0019777801066416523 -0.0021019612502771283 0.06444661681575503"/>
     <mass value="0.22275467470315166"/>
     <inertia ixx="0.000447" ixy="3e-02" ixz="-1.3e-02" iyy="0.000447" iyz="1.4e-02" izz="1e-02"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.172122 0.023218 -0.305165"/>
+    <origin rpy="0 0 0" xyz="-0.173536 0.021804 -0.305165"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_2_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.172122 0.023218 -0.305165"/>
+    <origin rpy="0 0 0" xyz="-0.173536 0.021804 -0.305165"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_2_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -346,19 +346,19 @@
 
 <link name="arrow_grasper_4_2">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.001977883687975787 0.0018532606170429955 0.06445426800904086"/>
+    <origin rpy="0 0 0" xyz="-0.0019776606637760333 0.001852464717660901 0.06445426800929166"/>
     <mass value="0.2227546747031517"/>
-    <inertia ixx="0.000447" ixy="3e-02" ixz="1.3e-02" iyy="0.000447" iyz="-1.2e-02" izz="1e-02"/>
+    <inertia ixx="0.000447" ixy="3e-02" ixz="-1.3e-02" iyy="0.000447" iyz="1.4e-02" izz="1e-02"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="0.022803 -0.171707 -0.305165"/>
+    <origin rpy="0 0 0" xyz="0.021389 -0.173122 -0.305165"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_4_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="0.022803 -0.171707 -0.305165"/>
+    <origin rpy="0 0 0" xyz="0.021389 -0.173122 -0.305165"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_4_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -367,21 +367,105 @@
 
 <link name="arrow_grasper_3_2">
   <inertial>
-    <origin rpy="0 0 0" xyz="-0.0019770671784639926 0.0018530783680034517 0.06445506473310253"/>
+    <origin rpy="0 0 0" xyz="-0.0019778441542642744 0.0018522824686214995 0.06445506473329449"/>
     <mass value="0.2227546747031532"/>
-    <inertia ixx="0.000447" ixy="3e-02" ixz="1.3e-02" iyy="0.000447" iyz="-1.2e-02" izz="1e-02"/>
+    <inertia ixx="0.000447" ixy="3e-02" ixz="-1.3e-02" iyy="0.000447" iyz="1.4e-02" izz="1e-02"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="0.217258 0.022747 -0.304788"/>
+    <origin rpy="0 0 0" xyz="0.215843 0.021332 -0.304788"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_3_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver_default"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="0.217258 0.022747 -0.304788"/>
+    <origin rpy="0 0 0" xyz="0.215843 0.021332 -0.304788"/>
     <geometry>
       <mesh filename="package://throwing_bot_description/meshes/arrow_grasper_3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_fl_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.028714288147278832 0.028750664562414208 4.62912067131227e-06"/>
+    <mass value="7.448486590236144"/>
+    <inertia ixx="0.021306" ixy="-0.001481" ixz="1e-06" iyy="0.021358" iyz="1e-06" izz="0.022811"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.262122 -0.262122 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_fl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.262122 -0.262122 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_fl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_br_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.03016543405753125 -0.030129057642393597 -4.629120670299192e-06"/>
+    <mass value="7.448486590236144"/>
+    <inertia ixx="0.021358" ixy="-0.001481" ixz="1e-06" iyy="0.021306" iyz="1e-06" izz="0.022811"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.2865 0.2865 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_br_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.2865 0.2865 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_br_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_fr_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02871428814727739 -0.028751346199814953 -4.62912066842569e-06"/>
+    <mass value="7.448486590236144"/>
+    <inertia ixx="0.021306" ixy="0.001481" ixz="-1e-06" iyy="0.021358" iyz="1e-06" izz="0.022811"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.262122 0.287207 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_fr_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.262122 0.287207 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_fr_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_bl_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.030128931937736025 0.03016566456241443 -4.629120669702447e-06"/>
+    <mass value="7.448486590236144"/>
+    <inertia ixx="0.021306" ixy="0.001481" ixz="1e-06" iyy="0.021358" iyz="-1e-06" izz="0.022811"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.285793 -0.260707 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_bl_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver_default"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.285793 -0.260707 -0.0819"/>
+    <geometry>
+      <mesh filename="package://throwing_bot_description/meshes/wheel_bl_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -462,7 +546,7 @@
 </joint>
 
 <joint name="arrow_holder_slide" type="prismatic">
-  <origin rpy="0 0 0" xyz="0.480192 0.522618 0.020663"/>
+  <origin rpy="0 0 0" xyz="0.480192 0.522619 0.020663"/>
   <parent link="throwing_base_1"/>
   <child link="arrow_holder_1"/>
   <axis xyz="0.707106 0.707106 0.001368"/>
@@ -478,10 +562,10 @@
 </joint>
 
 <joint name="throwing_rotate" type="continuous">
-  <origin rpy="0 0 0" xyz="-0.236559 -0.406324 0.04096"/>
+  <origin rpy="0 0 0" xyz="-0.235145 -0.40491 0.04096"/>
   <parent link="slider_rod_2"/>
   <child link="throwing_base_1"/>
-  <axis xyz="-0.707107 0.707107 -0.0"/>
+  <axis xyz="-0.707107 0.707107 0.0"/>
 </joint>
 
 <joint name="arrow_grasper_1_joint" type="continuous">
@@ -499,17 +583,41 @@
 </joint>
 
 <joint name="arrow_grasper_4_joint" type="continuous">
-  <origin rpy="0 0 0" xyz="0.310114 0.504624 0.000789"/>
+  <origin rpy="0 0 0" xyz="0.310114 0.504625 0.000789"/>
   <parent link="throwing_base_1"/>
   <child link="arrow_grasper_4_2"/>
   <axis xyz="-0.707106 -0.707106 -0.001368"/>
 </joint>
 
 <joint name="arrow_grasper_3_joint" type="continuous">
-  <origin rpy="0 0 0" xyz="0.115659 0.31017 0.000412"/>
+  <origin rpy="0 0 0" xyz="0.11566 0.310171 0.000412"/>
   <parent link="throwing_base_1"/>
   <child link="arrow_grasper_3_2"/>
   <axis xyz="-0.707106 -0.707106 -0.001368"/>
+</joint>
+
+<joint name="wheel_fl_fix" type="fixed">
+  <origin rpy="0 0 0" xyz="0.262122 0.262122 0.0819"/>
+  <parent link="base_link"/>
+  <child link="wheel_fl_1"/>
+</joint>
+
+<joint name="wheel_br_fix" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.2865 -0.2865 0.0819"/>
+  <parent link="base_link"/>
+  <child link="wheel_br_1"/>
+</joint>
+
+<joint name="wheel_fr_fix" type="fixed">
+  <origin rpy="0 0 0" xyz="0.262122 -0.287207 0.0819"/>
+  <parent link="base_link"/>
+  <child link="wheel_fr_1"/>
+</joint>
+
+<joint name="wheel_bl_fix" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.285793 0.260707 0.0819"/>
+  <parent link="base_link"/>
+  <child link="wheel_bl_1"/>
 </joint>
 
 </robot>

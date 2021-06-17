@@ -9,10 +9,6 @@ defense_bot_controller:
     type: effort_controllers/JointPositionController
     joint: gripper_ball_rotation
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  turn_table_rotation_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: turn_table_rotation
-    pid: {p: 100.0, i: 0.01, d: 10.0}
   rack_slider_position_controller:
     type: effort_controllers/JointPositionController
     joint: rack_slider
@@ -25,11 +21,15 @@ defense_bot_controller:
     type: effort_controllers/JointPositionController
     joint: end_effector_rotation
     pid: {p: 100.0, i: 0.01, d: 10.0}
+  gripper_rotation_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: gripper_rotation
+    pid: {p: 100.0, i: 0.01, d: 10.0}
   gripper_arm_rotation_position_controller:
     type: effort_controllers/JointPositionController
     joint: gripper_arm_rotation
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  gripper_rotation_position_controller:
+  turn_table_rotation_position_controller:
     type: effort_controllers/JointPositionController
-    joint: gripper_rotation
+    joint: turn_table_rotation
     pid: {p: 100.0, i: 0.01, d: 10.0}
