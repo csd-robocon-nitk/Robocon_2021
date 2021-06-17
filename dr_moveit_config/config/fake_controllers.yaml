@@ -1,0 +1,11 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - gripper_arm_rotation
+  - name: fake_hand_controller
+    joints:
+      - gripper_rotation
+      - gripper_ball_rotation
+initial:  # Define initial robot poses.
+  - group: hand
+    pose: initial
