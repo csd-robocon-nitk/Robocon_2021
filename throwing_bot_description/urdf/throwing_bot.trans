@@ -144,45 +144,45 @@
   </actuator>
 </transmission>
 
-<transmission name="arrow_grasper_1_joint_tran">
+<transmission name="arrow_grasper_fr_1_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="arrow_grasper_1_joint">
+  <joint name="arrow_grasper_fr_1_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="arrow_grasper_1_joint_actr">
+  <actuator name="arrow_grasper_fr_1_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="arrow_graper_2_joint_tran">
+<transmission name="arrow_grasper_fr_2_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="arrow_graper_2_joint">
+  <joint name="arrow_grasper_fr_2_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="arrow_graper_2_joint_actr">
+  <actuator name="arrow_grasper_fr_2_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="arrow_grasper_4_joint_tran">
+<transmission name="arrow_grasper_bl_1_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="arrow_grasper_4_joint">
+  <joint name="arrow_grasper_bl_1_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="arrow_grasper_4_joint_actr">
+  <actuator name="arrow_grasper_bl_1_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="arrow_grasper_3_joint_tran">
+<transmission name="arrow_grasper_bl_2_rotate_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="arrow_grasper_3_joint">
+  <joint name="arrow_grasper_bl_2_rotate">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="arrow_grasper_3_joint_actr">
+  <actuator name="arrow_grasper_bl_2_rotate_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>

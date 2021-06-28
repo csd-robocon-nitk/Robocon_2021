@@ -57,19 +57,19 @@ throwing_bot_controller:
     type: effort_controllers/JointPositionController
     joint: throwing_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  arrow_grasper_1_joint_position_controller:
+  arrow_grasper_fr_1_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: arrow_grasper_1_joint
+    joint: arrow_grasper_fr_1_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  arrow_graper_2_joint_position_controller:
+  arrow_grasper_fr_2_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: arrow_graper_2_joint
+    joint: arrow_grasper_fr_2_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  arrow_grasper_4_joint_position_controller:
+  arrow_grasper_bl_1_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: arrow_grasper_4_joint
+    joint: arrow_grasper_bl_1_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  arrow_grasper_3_joint_position_controller:
+  arrow_grasper_bl_2_rotate_position_controller:
     type: effort_controllers/JointPositionController
-    joint: arrow_grasper_3_joint
+    joint: arrow_grasper_bl_2_rotate
     pid: {p: 100.0, i: 0.01, d: 10.0}
